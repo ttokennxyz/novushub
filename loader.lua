@@ -3,7 +3,7 @@ local scripts = {
     ["75366259315586"] = "https://api.luarmor.net/files/v3/loaders/7d34fe2f272483401d33b9c4ab996709.lua", -- build ur base
 }
 
-local game_place_id = game.PlaceId
+local game_place_id = tostring(game.PlaceId)
 
 for id, script_link in pairs(scripts) do
     if id == game_place_id then
